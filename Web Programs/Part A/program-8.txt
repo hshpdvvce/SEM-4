@@ -1,0 +1,37 @@
+<!-- A JavaScript code to create a simple calculator-->
+
+<html>
+    <head>
+        <title>Javascript Calculator</title>
+    </head>
+    <body>
+        <h1>Calculator program in calculator</h1>
+        <div class="formstyle">
+            <form name = "form1">
+                <input id="calc" type="text" placeholder="type the number" name="answer"><br><br>
+                <input type="button" value="1" onclick="document.form1.answer.value += '1'">
+                <input type="button" value="2" onclick="document.form1.answer.value += '2'">
+                <input type="button" value="3" onclick="document.form1.answer.value += '3'"><br><br>
+                <input type="button" value="4" onclick="document.form1.answer.value += '4'">
+                <input type="button" value="5" onclick="document.form1.answer.value += '5'">
+                <input type="button" value="6" onclick="document.form1.answer.value += '6'"><br><br>
+                <input type="button" value="7" onclick="document.form1.answer.value += '7'">
+                <input type="button" value="8" onclick="document.form1.answer.value += '8'">
+                <input type="button" value="9" onclick="document.form1.answer.value += '9'"><br><br>
+                <input type="button" value="/" onclick="document.form1.answer.value += '/'">
+                <input type="button" value="0" onclick="document.form1.answer.value += '0'">
+                <input type="button" value="+" onclick="document.form1.answer.value += '+'"><br><br>
+                <input type="button" value="-" onclick="document.form1.answer.value += '-'">
+                <input type="button" value="*" onclick="document.form1.answer.value += '*'">
+                <input type="button" value="." onclick="document.form1.answer.value += '.'"><br><br>
+
+                <input type="button" value="AC" onclick="document.form1.answer.value += 0">
+                
+                <input type="button" value="=" onclick="document.form1.answer.value = eval(form1.answer.value)">
+                
+
+
+
+        </div>
+    </body>
+</html>

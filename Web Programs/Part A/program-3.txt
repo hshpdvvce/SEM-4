@@ -1,0 +1,27 @@
+<!-- Create a webpage to display an online shopping website with the list of items available with concept of ordered and unordered list. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <title>Program-3</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-color: antiquewhite;">
+    <h1 style="color: rgb(45, 237, 240);">Basic Grocery List</h1>
+    <ol style="font-style: italic;color: azure;background-color: navy;">
+        <li>Grains</li>
+        <li>Pasta</li>
+        <li>Rice</li>
+        <li>Bread</li>
+        <ul>
+            <li>Oil & Fat</li>
+            <li>Butter</li>
+            <li>Vegetable Oil</li>
+            
+        </ul>
+    </ol>
+    
+</body>
+</html>

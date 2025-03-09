@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    Hello! This is my first website!
+    <title>
+        DemoPage
+    </title>
+</head>
+<body style="background-color: brown;">
+    <p>
+        <strong>This</strong> is the paragraph tag. This is where we input paragraphs of text. This is without using br tag. <br> This line is after using br tag. This br tag which stands for break is used to go to next line.
+        <hr>
+    </p>
+    <h1 style="background-color: aqua;">This is h1 tag</h1><hr>
+    <h2 style="background-color: rgb(98, 200, 185);">This is h2 tag</h2><hr>
+    <h3>This is h3 tag</h3><hr>
+    <h4>This is h4 tag</h4><hr>
+    <h5>This is h5 tag</h5><hr>
+    <h6>This is h6 tag</h6><hr>
+    <b>This is Bold Tag</b><br>
+    <br>
+    <i>This is Italics Tag</i><br>
+    <br>
+    <u>This is Underline Tag</u><br>
+    <br><hr>
+    Now this is the demo of using <b>Subscript</b> and <b>Superscript</b>
+    <br>
+    <b>C<sub>6</sub>H<sub>22</sub>O<sub>11</sub></b> => SUGAR
+    <br>
+    <b>x<sup>2</sup></b> => Application of SuperScript
+    <hr>
+    <h3>Demo of InLine CSS</h3>
+    <h5 style="color: rgb(42, 17, 238)">Aqua Color</h5><hr>
+    <p style="font-size: 50px;">This is of the size 50 pixels</p>
+</body>    
+</html>

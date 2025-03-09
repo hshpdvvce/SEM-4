@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>
+        Customer Details
+    </title>
+</head>
+<body>
+    <table style="border-style: dashed; border-color: aqua;">
+        <caption>Customer Details</caption>
+        <tr><th>Customer ID</th><th>Name</th><th>Experience</th><th>Salary</th></tr>
+        <tr><td>1234</td><td>ABCD</td><td>12</td><td>25000</td></tr>
+        <tr><td>5678</td><td>EFGH</td><td>14</td><td>28000</td></tr>
+        <tr><td>9012</td><td>IJKL</td><td>16</td><td>31000</td></tr>
+        <tr><td>3456</td><td>MNOP</td><td>18</td><td>34000</td></tr>
+    </table>
+</body>
+    
+</html>

@@ -1,0 +1,39 @@
+<!-- Design a webpage to create a form for a student to enroll for a course which includes the following fields: Name, USN, Gender Subject interested witht he drop-down options, email, contact number, Address with submit and reset button. -->
+
+<html>
+<head>
+    <title>Program-4</title>
+</head>
+<body>
+    <form align="center" style="background-color: bisque; border-style: double;">
+        <p><label>Name </label><input placeholder="enter your name"></p>
+        <p><label>USN </label><input placeholder="4VV23CSXXX"></p>
+        <p><label>Gender</label></p>
+        <label>Male</label>
+        <input type="radio">
+        <label>Female</label>
+        <input type="radio">
+        <br>
+        <p>Choose Subject
+        <select>
+            <option>--select--</option>
+            <option>Web Programming</option>
+            <option>Python Programming</option>
+            <option>C Programming</option>
+            <option>C++ Programming</option>
+            <option>Java Programming</option>
+        </select></p>
+
+        <p><label>Contact Number</label>
+        <input type="text"></p>
+        <p><label>Address</label><br><textarea placeholder="Enter your address"></textarea>
+        <br>
+        <p></p>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        <p></p>
+        
+    </form>
+    
+</body>
+</html>
