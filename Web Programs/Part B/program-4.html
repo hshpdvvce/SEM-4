@@ -1,0 +1,40 @@
+<!-- Develop an arrow function in JavaScript that checks whether a year is a leap year, alert the user with true if the year is a leap year and false if the year is not. Validate centuries also. -->
+<!-- Input: 2000, Output: Leap year -->
+<!-- Input: 2100, Output: Non Leap year -->
+<!-- Input: 2004, Output: Leap year -->
+<!-- Input: 2006, Output: Non Leap year -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leap Year Checker</title>
+  <script>
+    const isLeapYear = (year) => {
+      if (year % 4 === 0) {
+        if (year % 100 === 0) {
+          return year % 400 === 0;
+        }
+        return true;
+      }
+      return false;
+    };
+
+    function checkLeapYear() {
+      const userYear = prompt("Enter a year:");
+      const year = parseInt(userYear);
+      if (!isNaN(year)) {
+        const result = isLeapYear(year);
+        alert(`Is ${year} a leap year? ${result}`);
+      } else {
+        alert("Invalid input. Please enter a valid year.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Leap Year Checker</h1>
+  <button onclick="checkLeapYear()">Check Leap Year</button>
+</body>
+</html>

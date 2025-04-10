@@ -1,0 +1,19 @@
+<!-- Develop a JavaScript to sort and access the array elements. 
+Input: n=5
+Unsorted array elements: 10, 1, -5, 4, 15 
+Sorted Array: -5, 1, 4, 10, 15 -->
+
+<html>
+  <body>
+    <h2>JavaScript Arrays</h2>
+    <p id="demo"></p>
+    <script>
+      const points = [10, 1, -5, 4, 15];
+      alert("The actual elements are " + points);
+      const points1 = points.sort(function(a, b) {
+        return a - b;
+      });
+      alert("The sorted elements are " + points1);
+    </script>
+  </body>
+</html>
