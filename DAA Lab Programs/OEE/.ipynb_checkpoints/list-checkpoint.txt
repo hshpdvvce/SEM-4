@@ -1,0 +1,22 @@
+Travelling Salesman Problem (TSP)
+    greedy method and dynamic programming
+
+N-Queens Problem
+    Methods: Backtracking (DFS) vs. Genetic Algorithm (heuristic)
+
+Longest Common Subsequence
+    Methods: Dynamic Programming (O(n²)) vs. Space-Optimized DP (O(n))
+
+Matrix Multiplication
+
+    Standard Iterative Algorithm
+    Strassen's Algorithm
+    Coppersmith-Winograd Algorithm
+    Divide and Conquer Approach    
+
+Maximum Flow Problem
+
+    Ford-Fulkerson Algorithm
+    Edmonds-Karp Algorithm
+    Dinic's Algorithm
+    Push-Relabel Algorithm    

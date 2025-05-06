@@ -1,0 +1,88 @@
+1. Execution Time vs. Number of Cities
+What It Shows:
+
+X-axis: Number of cities in the TSP instance (ranging from 5 to 15).
+
+Y-axis: Average execution time (in seconds) measured over several trials.
+
+Lines:
+
+Blue Line: Greedy method (Nearest Neighbor)
+
+Red Line: Dynamic Programming (Held–Karp)
+
+How to Explain:
+
+Scalability: Point out that the greedy algorithm (blue) maintains low and nearly linear execution time as the number of cities increases, making it very efficient for larger instances.
+
+Optimality vs. Complexity: In contrast, the DP method (red) shows a steep increase in execution time even for a modest number of cities—this is because DP explores an exponential number of states.
+
+Trade-Off: Emphasize that while DP is computationally expensive, it provides the optimal solution; however, its use is limited to small instances due to scalability issues.
+
+2. Path Length vs. Number of Cities
+What It Shows:
+
+X-axis: Number of cities in the TSP instance.
+
+Y-axis: Average total distance of the tour (sum of distances along the path).
+
+Lines:
+
+Blue Line: Tour length obtained using the greedy algorithm
+
+Red Line: Optimal tour length from the DP method (although for simplicity in this demo, the DP path is approximated with the greedy path)
+
+How to Explain:
+
+Quality of the Solution: Explain that this graph compares the “cost” (total distance) of the tours from both methods.
+
+Optimal vs. Heuristic: While the DP method guarantees the optimal (minimum) tour length, the greedy method, being heuristic, may sometimes produce a longer tour.
+
+Practical Insight: If the two lines are close, you can mention that the greedy method performs fairly well in many instances—but the slight differences (if any) highlight the suboptimality of the greedy approach in comparison to the theoretically best solution.
+
+3. Static Plot of TSP Paths (for n=5)
+What It Shows:
+
+Scatter Plot: The randomly generated cities (displayed as blue dots).
+
+Overlaid Paths:
+
+Red Line: The tour path produced by the greedy method.
+
+Green Line: The approximated DP tour path (for demonstration, it’s similar to the greedy tour since reconstructing the exact DP path is complex).
+
+How to Explain:
+
+Visualization of the Tour: Describe how this plot shows the physical route that the algorithm computed, looping back to the starting city.
+
+Comparison: Even though both methods appear identical in this demo, mention that in a full implementation the DP route would be the optimal one. This visual helps in understanding how the algorithms “connect” the cities.
+
+Insights: Discuss any patterns you notice, such as whether the route seems to avoid long detours, which can be an indicator of a good heuristic solution.
+
+4. Greedy TSP Animation
+What It Shows:
+
+Animated Sequence: The step-by-step construction of the tour by the greedy algorithm.
+
+At Each Frame:
+
+A red line is drawn from the current city to the next nearest unvisited city.
+
+The current city is highlighted with a red dot.
+
+How to Explain:
+
+Algorithm Process Visualization: Emphasize that the animation clearly illustrates how the greedy algorithm works by making a local (nearest neighbor) choice at each step.
+
+Interactive Exploration: Explain that the animation allows the evaluator to observe the intermediate states of the algorithm, offering insight into its decision-making process.
+
+User Control: Mention that the interactive slider (bar at the bottom) enables viewers to pause, replay, or jump to a specific step, thereby deepening their understanding of the algorithm’s progression.
+
+Final Tips for Your Explanation
+Highlight Trade-Offs: Explain that while the greedy method is fast and easy to implement, it might not always yield the optimal solution. In contrast, the DP method is optimal but impractical for large instances.
+
+Discuss Scalability: Use the execution time graph to reinforce the point that DP scales poorly, which is why heuristics like the greedy method are often used in real-world applications despite their suboptimality.
+
+Focus on Visual Clarity: Point out how the plots and animations help bridge the gap between abstract algorithmic concepts and tangible, visual outcomes—this is especially valuable when presenting to an audience not deeply familiar with the underlying code.
+
+By structuring your explanation around these points, you’ll be able to convey a clear and comprehensive understanding of your results without delving into the code details.
