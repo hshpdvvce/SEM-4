@@ -1,5 +1,0 @@
-move into the directory where the java codes are present
-    => here it is Java-codes and the terminal commands to be executed
-        -> cd Java-codes
-        -> javac Dijakstras.java
-        -> java Dijakstras
