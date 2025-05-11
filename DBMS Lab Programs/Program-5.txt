@@ -1,0 +1,40 @@
+create database student;
+use student
+
+create table STUDENT(Snum int primary key, Sname varchar(20), Major varchar(10), Lev varchar(20), age int);
+
+INSERT INTO Student (Snum, Sname, Major, Lev) VALUES (1, 'Andy', 'CSE', 'JR'), (2, 'Helen', 'Arts', 'JR'), (3, 'Bob', 'Psychology', 'GR'), (4, 'Pham', 'History', 'SR'), (5, 'Zola', 'CSE', 'SR'), (6, 'ABhi', 'CSE', 'JR'), (7, 'Tara', 'Arts', 'JR');
+
+create table Faculty(Fid int primary key, Fname varchar(20), DeptId int);
+
+INSERT INTO Faculty VALUES (22, 'Kera', 88), (23, 'Niall', 77), (24, 'Ravi', 33), (27, 'Lou', 66), (31, 'Jane', 44), (34, 'Payne', 55), (36, 'Rakesh', 22);
+
+
+create table class(Cname varchar(20)  primary key, Meets_at varchar(20),Room varchar(20),Fid int, Foreign key(fid) references faculty(fid) on delete set NULL);
+
+INSERT INTO Class VALUES 
+('HIS38', '12:00', 'R123', 34), 
+('CS293', '12:00', 'R124', 23), 
+('CS262', '2:00', 'R125', 24), 
+('PY331', '9:00', 'R126', 27), 
+('AR32', '9:00', 'R127', 36), 
+('AR36', '10:00', 'R128', 31), 
+('PY332', '8:00', 'R128', 22), 
+('HIS37', '5:00', 'R128', 34), 
+('HIS34', '4:00', 'R128', 31), 
+('CS289', '2:00', 'R128', 22);
+
+
+create table Enrolled(Snum int, foreign key(Snum)references student(Snum),Cname varchar(10), foreign key(Cname) references Class(Cname));
+
+INSERT INTO Enrolled VALUES 
+(1, 'CS262'), 
+(1, 'AR32'), 
+(2, 'AR32'), 
+(2, 'PY331'), 
+(3, 'PY331'), 
+(3, 'HIS34'), 
+(4, 'HIS38'), 
+(5, 'CS293'), 
+(5, 'HIS38'), 
+(6, 'CS262');

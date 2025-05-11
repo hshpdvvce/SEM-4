@@ -1,0 +1,20 @@
+create database airline;
+use airline
+
+create table Flights(Flno int primary key, Source varchar(20), Destination varchar(20),Distance int, DepartTime time, ArrivalTime time, Price int);
+insert into Flights values(101, 'mysore', 'banglore', 140, '09:30:00', '10:30:00', 5000);
+
+insert into Flights values(101, 'mysore', 'banglore', 140, '09:30:00', '10:30:00', 5000);
+
+create table AirCraft(Aid int primary key, Aname varchar(20), CrusingRange int);
+
+INSERT INTO AirCraft VALUES (1001, 'KingFisher', 2500), (2002, 'Deccan', 2800), (3003, 'Dishan', 3000), (4004, 'GoIbibo', 750), (5005, 'Local', 900);
+
+create table Employees(Eid int primary key, Ename varchar(20), Salary int);
+
+INSERT INTO Employees VALUES (11, 'Shivakumar', 150000), (12, 'Bhaskar', 75000), (13, 'DishanKrishna', 200000), (15, 'Vishnu', 80000), (20, 'Dhanu', 90000);
+
+create table Certified(Eid int, Aid int, foreign key(Eid) references Employees(Eid), foreign key(Aid) references AirCraft(Aid));
+
+INSERT INTO Certified VALUES (11, 3003), (11, 1001), (11, 2002), (13, 4004), (12, 2002);
+

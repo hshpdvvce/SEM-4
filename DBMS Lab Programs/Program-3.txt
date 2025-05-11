@@ -1,0 +1,38 @@
+create database company;
+use company
+
+Create table Depts (Dname varchar(20),Dno int Primary Key, Mgrstrdate date, Mgrssn int );
+
+insert into Depts values ('Accounts', 1, '1998-08-12', 333), ('Research', 2, '2000-01-24',111),('Production', 3,'2009-02-14', 444), ('sales',4,'2000-03-15', 555),('Testing', 5, '2002-04-23', 777);
+
+
+Create table Emp(SSN int Primary Key,
+FName varchar(20),LName varchar(20),
+Address varchar(20),
+Sex char(1),
+Salary int, superssn int, Dno int, foreign key(superssn) references Emp(ssn) on delete cascade,
+foreign key(Dno) references Depts(Dno) on delete cascade);
+
+insert into Emp values(111, 'james', 'scott', 'mysore', 'M', 123456, 111, 1), (222, 'ramesh', 'aravnid',
+'banglore', 'M', 345672, 111, 1), (333,'david', 'hush', 'Honalulu', 'M', 70000, 222,1), (444, 'kavya','bind', 'guwahathi', 'F', 750000, 444,1), (555, 'hashmi', 'khan', 'mumbai', 'F', 450000, 333,1), (666,
+'pniky', 'khanna', 'punjab', 'F', 560000, 666, 1), (777,'kushal', 'kundan', 'assam', 'M', 35000, 555,4),
+(888, 'Arjith', 'gundal', 'assam', 'M', 660000, 444, 5);
+
+
+Create table Deptloc ( Dno int references Depts(dno) ,  Dloc varchar(20));
+
+insert into  Deptloc values(1, 'Babglore'), (2,'Mysore'), (3,'hubli'), (4, 'punjab'), (5,' guwahathi');
+
+
+Create table Prj (Pno int Primary Key , Pname varchar(20), Ploc varchar(20), Dno int, foreign
+key(Dno) references Depts(dno));
+
+insert into Prj values(10,'p1', 'banglore',1), (20,'p2','mysore',3), (30,'p3','mumbai',4), (40,'p4', 'assam',
+4), (50,'IOT','punjab',5), (60,'p6','honalulu',1);
+
+
+Create table Work(SSN int references Emp(SSN), Pno int, foreign key (Pno) references Prj(pno),
+hours float);
+
+insert into work values(111,50,5), (222, 50,10), (333, 50,7), (444,20,8), (555, 10,3), (666, 30,1),
+(777,40,12);
